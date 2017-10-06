@@ -4,7 +4,45 @@
 <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<h1> This is work under progress </h1>
+<h1>Make loads of money!!!</h1>
+<section class="row">
+		<h3>Place your Trade details</h3>
+	
+			<div class="four columns">
+				<p><label>Enter the stock symbol you want to trade</label></p>
+				<input type="text" id="sym"/>
+			</div>
+			<div class="four columns">
+				<p><label>Would you like to Buy or Sell?</label></p>
+				<select id="trans-type">
+					<option value="BUY">Buy</option>
+					<option value="SELL">Sell</option>
+				</select>
+			</div>
+			<div class="four columns">
+				<p>Enter the order type</p>
+				<select id="order-type">
+					<option value="MARKET">Market</option>
+					<option value="LIMIT">Limit</option>
+				</select>
+			</div>
+			<div class="four columns">
+				<p> Enter the quantity of shares</p>
+				<input type="number" id="qty"/>
+			</div>
+			<div class="four columns">
+				<p>Enter the price (only for limit orders)</p>
+				<input type="number" id="price"/>
+			</div>
+			<div class="four columns">
+				<p> Enter the product</p>
+				<select id="order-type">
+					<option value="CNC">CNC</option>
+					<option value="MIS">MIS</option>
+				</select>
+			</div>
+			<div> <button id="btn" onClick="trade()"> Trade </button>
+	</section>
 
 
 </div>
