@@ -68,7 +68,7 @@ kite.add({
         "price":price,
         "product":product
     });
-
+console.log(symbol+" "+qty+" "+trans+" "+order+" "+price+" "+product);
     // Register an (optional) callback.
     kite.finished(function(status, request_token) {
         alert("Finished. Status is " + status);
