@@ -45,5 +45,36 @@
 				<p>&nbsp</p>
 				<button id="btn" onClick="trade()"> Trade </button>
 	</section>
+	<script src="https://kite.trade/publisher.js?v=1"></script>
+	<script>
+
+function trade()
+{
+	KiteConnect.ready(function() {
+		var kite = new KiteConnect("lm9x4wuaqi4qlyef");
+var symbol = $("#sym").val();
+var qty = parseInt($("#qty").val());
+var trans = $("trans-type").val();
+var order = $("order-type").val();
+var price = parseInt($("price").val());
+var product = $("product").val();
+kite.add({
+        "exchange": "NSE",
+        "tradingsymbol": symbol,
+        "quantity": !isNaN(qty) ? qty : 1,,
+        "transaction_type": trans,
+        "order_type": order,
+        "price":price,
+        "product":product
+    });
+
+    // Register an (optional) callback.
+    kite.finished(function(status, request_token) {
+        alert("Finished. Status is " + status);
+    });
+      kite.connect();
+});
+}  
+</script>
 </body>
 </html>
