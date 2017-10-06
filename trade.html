@@ -37,9 +37,8 @@
 			<div class="four columns">
 				<label> Enter the product</label>
 				<select id="product">
-					<option value="MIS">MIS</option>
 					<option value="CNC">CNC</option>
-					
+					<option value="MIS">MIS</option>
 				</select>
 			</div>
 			<div> 
@@ -55,10 +54,10 @@ function trade()
 		var kite = new KiteConnect("lm9x4wuaqi4qlyef");
 var symbol = $("#sym").val();
 var qty = parseInt($("#qty").val());
-var trans = $("trans-type").val();
-var order = $("order-type").val();
-var price = parseInt($("price").val());
-var product = $("product").val();
+var trans = $("#trans-type").val();
+var order = $("#order-type").val();
+var price = parseInt($("#price").val());
+var product = $("#product").val();
 kite.add({
         "exchange": "NSE",
         "tradingsymbol": symbol,
