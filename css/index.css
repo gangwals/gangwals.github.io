@@ -47,6 +47,15 @@ h1 {
   background-color: #ff983c;
 }
 
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+
 /* copyright stuffs.. */
 p {
   text-align: center;
