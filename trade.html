@@ -2,6 +2,7 @@
 <head>
 <title> This is gangwalsaurabh </title>
 <link rel="stylesheet" href="css/index.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <h1>Make loads of money!!!</h1>
@@ -78,5 +79,18 @@ console.log(symbol+" "+qty+" "+trans+" "+order+" "+price+" "+product);
 });
 }  
 </script>
+<script type="text/javascript">
+	var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://coinbin.org/btc",
+  "method": "GET"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+	
+	</script>
 </body>
 </html>
