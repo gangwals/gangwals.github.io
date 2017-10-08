@@ -1,6 +1,6 @@
 {
-    "name": "github.io",
-    "short_name": "github.io",
+    "name": "gangwals",
+    "short_name": "gangwals",
     "icons": [{
         "src": "/logo_192_by_192.png",
         "sizes": "192x192",
@@ -8,6 +8,6 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "gcm_sender_id": "712963685608",
+    "gcm_sender_id": "1052388476864",
     "gcm_user_visible_only": true
 }
