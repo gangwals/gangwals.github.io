@@ -136,7 +136,7 @@ document.getElementById("ethprice").innerHTML = "Rs. "+(res1[2]*usdinr).toFixed(
 $.ajax(XRP).done(function (response) {
 var res = Object.values(response);
 var res1 = Object.values(res[0]);
-document.getElementById("xrpprice").innerHTML = "Rs. "+(res1[2]*usdinr).toFixed(2)+"change "+(res1[4]*usdinr).toFixed(2);
+document.getElementById("xrpprice").innerHTML = "Rs. "+(res1[2]*usdinr).toFixed(2)+"  change "+(res1[4]*usdinr).toFixed(2);
 console.log(res);
 
 });
