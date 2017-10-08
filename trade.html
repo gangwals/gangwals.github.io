@@ -3,6 +3,18 @@
 <title> This is gangwalsaurabh </title>
 <link rel="stylesheet" href="css/index.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script type="text/javascript">
+    (function(p,u,s,h){
+        p._pcq=p._pcq||[];
+        p._pcq.push(['_currentTime',Date.now()]);
+        s=u.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://cdn.pushcrew.com/js/4073dca2044b018b94803c2932741443.js';
+        h=u.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+    })(window,document);
+</script>
 </head>
 <body>
 <h1>Make loads of money!!!</h1>
@@ -83,14 +95,14 @@ console.log(symbol+" "+qty+" "+trans+" "+order+" "+price+" "+product);
 	var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://coinbin.org/btc",
+  "url": "https://api.coindesk.com/v1/bpi/currentprice/INR.json",
   "method": "GET"
 }
 
 $.ajax(settings).done(function (response) {
   console.log(response);
 });
-	
+
 	</script>
 </body>
 </html>
